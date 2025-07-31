@@ -8,13 +8,13 @@ pipeline {
     }
 
     environment {
-        SSH_USER = 'your-ssh-user'
-        SSH_HOST = 'your-server-ip'
-        SSH_CRED_ID = 'your-jenkins-ssh-credentials-id'
-        DEPLOY_DIR = '/home/your-ssh-user/deployment-folder'
-        BACKUP_DIR = '/home/your-ssh-user/backup-folder'
-        REPO_URL = 'https://github.com/your-username/your-repo.git'
-    }
+    SSH_USER = 'ubuntu'                      
+    SSH_HOST = '114.143.107.6'              // 
+    SSH_CRED_ID = 'ssh-deploy-key'     
+    DEPLOY_DIR = '/home/ubuntu/app-folder'   
+    BACKUP_DIR = '/home/ubuntu/backup-folder'
+    REPO_URL = 'https://github.com/vaishnavisankey/jenkins-cicd-pipeline.git'
+}
 
     stages {
         stage('Checkout') {
