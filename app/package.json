@@ -1,0 +1,9 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Pretend build step running...'",
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
